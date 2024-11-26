@@ -1,0 +1,150 @@
+/* General Page Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(120deg, #e0e0e0, #ffffff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Title Header */
+.header {
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.header h1 {
+    color: red;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 10px;
+    font-size: 60px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation for Header */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Layout Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+/* Vertical Menu */
+.menu {
+    width: 20%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Dropdown Menu for Tour Options */
+.menu ul li ul.dropdown {
+    display: none;
+    list-style-type: none;
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul li:hover ul.dropdown {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.menu ul li ul.dropdown li a {
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+}
+
+/* Calendar Section */
+.calendar {
+    width: 70%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.calendar:hover {
+    transform: translateY(-10px);
+}
+
+.calendar h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#visit-date {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+#visit-date:hover {
+    border-color: #888;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+

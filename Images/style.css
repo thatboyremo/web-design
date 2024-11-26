@@ -1,0 +1,137 @@
+/*Text Properties*/
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+#text-one{
+    color:brown;
+    font-size: x-large;
+    font-family: cursive;
+}
+#text-two{
+    color:chocolate;
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+#text-three{
+    color:darkgreen;
+    font-size:larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text{
+    font-size: 50px;
+}
+
+#p-text{
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+#header-3{
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+#css-unit{
+    font-size: 50px;
+}
+
+#h4-unit{
+    font-size:300%;
+}
+/* #div1{
+    background-color: aqua;
+}
+#div2{
+    background-color: blue;
+}
+#div3{
+    background-color: gold;
+} */
+
+body{
+    background-color: #fff;
+}
+
+.col-hd{
+    color:blue
+    ;
+}
+
+
+#text-prop{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+#box-model{
+    /*create border*/
+    border: 2px solid rgb(o,255,9);
+    width:500px
+    /*text-align:centre; */
+    padding: 20px 20px 10px 10px;
+    magin-bottom:70px;
+}
+
+#box-model2{
+    border: 3px solid rgb(0,0, 233);
+    width: 500px
+    padding: 20px 30px 40px 10px
+}
+
+#box-model3{
+    border: 4px solid rgb(0,78, 233);
+    width: 500px
+    padding: 20px 30px 40px 10px
+}
+
+#box-model4{
+    border: 5px solid rgb(0,0, 233);
+    width: 500px
+    padding: 20px 30px 40px 10px
+}
+
+#box-one{
+    color:brown;
+    font-size: x-large;
+    font-family: cursive;
+    background-color: aqua;
+    height: 50px;
+    weight:50px;
+    margin-top: 10px;
+}
+#box-two{
+    color:chocolate;
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:blueviolet;
+    height: 50px;
+    weight:50px;
+    margin-top: 10px;
+}
+#box-three{
+    color:darkgreen;
+    font-size:larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:blue;
+    height: 50px;
+    weight:50px;
+    margin-top: 10px;
+
+#div1{
+    background-color: aqua;
+}
+#div2{
+    background-color: blue;
+}
+#div3{
+    background-color: gold;
+} */

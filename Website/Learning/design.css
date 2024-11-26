@@ -1,0 +1,130 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Sticky Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    /* background-image: url('https://via.placeholder.com/1920x600'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Product Details */
+.product-details {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+<!-- 21/1283  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISNEYLAND</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DISNEYLAND</h1>
+    </div>
+
+    <div class="container">
+        <!--Vertical Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tour Options</a>
+                    <ul class="dropdown">
+                        <li><a href="#">1 Hour Tour</a></li>
+                        <li><a href="#">2 Hours Tour</a></li>
+                        <li><a href="#">3 Hours Tour</a></li>
+                        <li><a href="#">4 Hours Tour</a></li>
+                        <li><a href="#">5 Hours Tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Calendar -->
+        <div class="calendar">
+            <h2>Select Your Visit Date</h2>
+            <input type="date" id="visit-date">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Disneyland | All Rights Reserved</p>
+    </footer>
+
+    <!-- Timer Script -->
+    <script>
+        setInterval(function() {
+            location.reload();
+        }, 20000);  // Refreshes every 20 seconds
+    </script> 
+
+
+</body>
+</html>

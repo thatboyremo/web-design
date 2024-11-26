@@ -1,0 +1,132 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: black;
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Gradient background animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Form styling */
+form {
+    width: 50%;
+    max-width: 450px;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form heading */
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Input fields */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #f7f7f7;
+}
+
+/* Input focus effects */
+input:focus, select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Radio button group */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(135deg, #ff6b6b, #fbc2eb);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #fbc2eb, #ff6b6b);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}

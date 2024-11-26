@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Dashboard</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="design2.css">
+    </head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>My Dashboard</h2>
+        </div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="User">
+                <div class="dropdown">
+                    <span>Toluwase Overcomer</span>
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dashboard Widgets -->
+        <section class="dashboard-widgets">
+            <div class="widget user-profile-card">
+                <img src=C:\Users\USER\Pictures alt="User">
+                <h3>Toluwase Overcomer Oluwademilade</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="widget stats-card">
+                <h3>Total Users</h3>
+                <p>1,234</p>
+            </div>
+
+            <div class="widget stats-card">
+                <h3>Total Sales</h3>
+                <p>$12,345</p>
+            </div>
+
+            <div class="widget stats-card">
+                <h3>Revenue</h3>
+                <p>$56,789</p>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Salami Joshua completed a task</li>
+                <li>Slogo uploaded a document</li>
+                <li>Team meeting scheduled for Friday</li>
+            </ul>
+        </section>
+
+        <!-- Chart Section -->
+        <section class="chart-section">
+            <h2>Performance Chart</h2>
+            <div id="chart-container">
+                <!-- You can place a static image here or use a charting library -->
+                <img src="https://via.placeholder.com/600x300" alt="Chart">
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

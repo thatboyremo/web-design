@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DISNEYLAND</title>
+        <link rel="stylesheet" href="design3.css">
+    </head>
+    <body>
+    <div class="header">
+        <h1>DISNEYLAND</h1>
+    </div>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tour Options</a>
+                    <ul class="dropdown">
+                        <li> <a href="#"> 1 hour Tour </a></li>
+                        <li> <a href="#"> 2 hour Tour </a></li>
+                        <li> <a href="#"> 3 hour Tour </a></li>
+                        <li> <a href="#"> 4 hour Tour </a></li>
+                        <li> <a href="#"> 5 hour Tour </a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact us @disneyland.info</a></li>
+            
+            </ul>
+           </nav> 
+
+           <!-- Calendar -->
+    <div class="calendar">
+        <p>Pick a Date for Your Visit:<p>
+        <input type="date" id="visit-date" class="Visit" maxlength="30">
+    </div>
+
+    
+
+    <!-- Timer Script -->
+    <script>
+        setInterval(function() {
+            location.reload();
+        }, 20000);  // Refreshes every 20 seconds
+    </script>
+    </div>
+  
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE
+ html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "author" content="Overcomer"> 
+        <meta name=" description" content="Learning web design and development">
+        <title> Web development class </title>
+        <link rel="stylesheet" href="">
+    
+    </head>
+
+    <body>
+        
+        <form action="/submit" method="post">
+            <!-- Firstname -->
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Surname -->
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Home Address -->
+            <label for="home_address">Home Address:</label>
+            <textarea id="home_address" name="home_address"></textarea>
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Office Address -->
+            <label for="office_address">Office Address:</label>
+            <textarea id="office_address" name="office_address"></textarea>
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Mailing Address -->
+            <label for="mailing_address">Mailing Address:</label>
+            <input type="text" id="mailing_address" name="mailing_address" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Highest Educational Qualification -->
+            <label>Highest Educational Qualification:</label><br>
+            <input type="radio" name="qualification" value="First School Leaving Certificate"> First School Leaving Certificate
+            <input type="radio" name="qualification" value="WASSCE"> WASSCE
+            <input type="radio" name="qualification" value="OND"> OND
+            <input type="radio" name="qualification" value="HND"> HND
+            <input type="radio" name="qualification" value="BSc"> BSc
+            <input type="radio" name="qualification" value="MSc"> MSc
+            <input type="radio" name="qualification" value="PhD"> Ph.D
+            <br>
+
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Nationality -->
+            <label>Nationality:</label><br>
+            <input type="checkbox" name="nationality" value="Nigerian"> Nigerian<br>
+            <input type="checkbox" name="nationality" value="others" id="nationality_others"> Others<br>
+            <div id="nationality_specify" style="display:none;">
+                <label for="specify_nationality">Specify Nationality:</label>
+                <input type="text" id="specify_nationality" name="specify_nationality" maxlength="30"><br>
+            </div>
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- State of Origin -->
+            <label for="state_of_origin">State of Origin:</label>
+            <input type="text" id="state_of_origin" name="state_of_origin" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- LGA of Origin -->
+            <label for="lga_of_origin">LGA of Origin:</label>
+            <input type="text" id="lga_of_origin" name="lga_of_origin" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- State of Residence -->
+            <label for="state_of_residence">State of Residence:</label>
+            <input type="text" id="state_of_residence" name="state_of_residence" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- LGA of Residence -->
+            <label for="lga_of_residence">LGA of Residence:</label>
+            <input type="text" id="lga_of_residence" name="lga_of_residence" maxlength="30">
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Religion -->
+            <label>Religion:</label><br>
+            <input type="checkbox" name="religion" value="Christianity"> Christianity<br>
+            <input type="checkbox" name="religion" value="Islam"> Islam<br>
+            <input type="checkbox" name="religion" value="Traditional Worship"> Traditional Worship<br>
+            <input type="checkbox" name="religion" value="others" id="religion_others"> Others<br>
+            <div id="religion_specify" style="display:none;">
+                <label for="specify_religion">Specify Religion:</label>
+                <input type="text" id="specify_religion" name="specify_religion" maxlength="30"><br>
+            </div>
+            <input type="reset" value="Reset"><br><br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+    
+        </form>
+    
+        <script>
+            // Show/Hide Nationality specify field
+            document.getElementById('nationality_others').addEventListener('change', function() {
+                var specifyField = document.getElementById('nationality_specify');
+                if (this.checked) {
+                    specifyField.style.display = 'block';
+                } else {
+                    specifyField.style.display = 'none';
+                }
+            });
+    
+            // Show/Hide Religion specify field
+            document.getElementById('religion_others').addEventListener('change', function() {
+                var specifyField = document.getElementById('religion_specify');
+                if (this.checked) {
+                    specifyField.style.display = 'block';
+                } else {
+                    specifyField.style.display = 'none';
+                }
+            });
+        </script>
+    
+    </body>
+    </html>
+    </body>
